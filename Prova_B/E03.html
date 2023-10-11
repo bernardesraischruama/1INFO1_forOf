@@ -8,13 +8,21 @@
     */
 
     //Entrada
-
+    const notasAluno = [7, 5, 9, ];
+    let soma = 0;
+    let notas = [];
 
     //Processamento
-
+    for (let nota of notasAluno) {
+        soma += nota;
+        notas.push(nota);
+    }
+    notas.sort((a, b) => a-b);
 
     //Saída
-
+    document.write(`Maior: ${notas[notas.length - 1]} <br>
+    Menor: ${notas[0]} <br>
+    Média: ${soma / notas.length}`);
 
     /*
     Exemplo:
